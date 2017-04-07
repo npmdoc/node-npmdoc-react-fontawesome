@@ -1,0 +1,930 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/danawoodman/react-fontawesome#readme">react-fontawesome (v1.5.0)</a>
+</h1>
+<h4>A React component for the font-awesome icon library.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-fontawesome">module react-fontawesome</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.ariaLabel">
+            function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.ariaLabel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.border">
+            function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.border
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.cssModule">
+            function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.cssModule
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.flip">
+            function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.flip
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.rotate">
+            function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.rotate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.size">
+            function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.size
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.stack">
+            function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.stack
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-fontawesome.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-fontawesome.propTypes">module react-fontawesome.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.ariaLabel">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>ariaLabel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.border">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>border
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.className">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>className
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.cssModule">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>cssModule
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.fixedWidth">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>fixedWidth
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.flip">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>flip
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.inverse">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>inverse
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.name">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>name
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.pulse">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>pulse
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.rotate">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>rotate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.size">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>size
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.spin">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>spin
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.stack">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>stack
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.tag">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>tag
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-fontawesome.propTypes.ariaLabel">module react-fontawesome.propTypes.ariaLabel</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.ariaLabel.ariaLabel">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>ariaLabel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.ariaLabel.isRequired">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.ariaLabel.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-fontawesome.propTypes.border">module react-fontawesome.propTypes.border</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.border.border">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>border
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.border.isRequired">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.border.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-fontawesome.propTypes.cssModule">module react-fontawesome.propTypes.cssModule</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.cssModule.cssModule">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>cssModule
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.cssModule.isRequired">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.cssModule.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-fontawesome.propTypes.flip">module react-fontawesome.propTypes.flip</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.flip.flip">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>flip
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.flip.isRequired">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.flip.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-fontawesome.propTypes.rotate">module react-fontawesome.propTypes.rotate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.rotate.rotate">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>rotate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.rotate.isRequired">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.rotate.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-fontawesome.propTypes.size">module react-fontawesome.propTypes.size</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.size.size">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>size
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.size.isRequired">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.size.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-fontawesome.propTypes.stack">module react-fontawesome.propTypes.stack</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.stack.stack">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>stack
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.stack.isRequired">
+            function <span class="apidocSignatureSpan">react-fontawesome.propTypes.stack.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-fontawesome" id="apidoc.module.react-fontawesome">module react-fontawesome</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.ariaLabel" id="apidoc.element.react-fontawesome.propTypes.ariaLabel">
+        function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.ariaLabel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.ariaLabel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.border" id="apidoc.element.react-fontawesome.propTypes.border">
+        function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.border
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.border = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.cssModule" id="apidoc.element.react-fontawesome.propTypes.cssModule">
+        function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.cssModule
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.cssModule = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.flip" id="apidoc.element.react-fontawesome.propTypes.flip">
+        function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.flip
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.flip = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.rotate" id="apidoc.element.react-fontawesome.propTypes.rotate">
+        function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.rotate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.rotate = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.size" id="apidoc.element.react-fontawesome.propTypes.size">
+        function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.size
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.size = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.stack" id="apidoc.element.react-fontawesome.propTypes.stack">
+        function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.stack
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.stack = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-fontawesome.propTypes" id="apidoc.module.react-fontawesome.propTypes">module react-fontawesome.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.ariaLabel" id="apidoc.element.react-fontawesome.propTypes.ariaLabel">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>ariaLabel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ariaLabel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.border" id="apidoc.element.react-fontawesome.propTypes.border">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>border
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">border = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.className" id="apidoc.element.react-fontawesome.propTypes.className">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>className
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">className = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.cssModule" id="apidoc.element.react-fontawesome.propTypes.cssModule">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>cssModule
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cssModule = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.fixedWidth" id="apidoc.element.react-fontawesome.propTypes.fixedWidth">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>fixedWidth
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fixedWidth = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.flip" id="apidoc.element.react-fontawesome.propTypes.flip">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>flip
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">flip = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.inverse" id="apidoc.element.react-fontawesome.propTypes.inverse">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>inverse
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inverse = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.name" id="apidoc.element.react-fontawesome.propTypes.name">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>name
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">name = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.pulse" id="apidoc.element.react-fontawesome.propTypes.pulse">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>pulse
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pulse = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.rotate" id="apidoc.element.react-fontawesome.propTypes.rotate">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>rotate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rotate = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.size" id="apidoc.element.react-fontawesome.propTypes.size">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>size
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">size = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.spin" id="apidoc.element.react-fontawesome.propTypes.spin">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>spin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">spin = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.stack" id="apidoc.element.react-fontawesome.propTypes.stack">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>stack
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stack = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.tag" id="apidoc.element.react-fontawesome.propTypes.tag">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>tag
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tag = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-fontawesome.propTypes.ariaLabel" id="apidoc.module.react-fontawesome.propTypes.ariaLabel">module react-fontawesome.propTypes.ariaLabel</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.ariaLabel.ariaLabel" id="apidoc.element.react-fontawesome.propTypes.ariaLabel.ariaLabel">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>ariaLabel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ariaLabel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.ariaLabel.isRequired" id="apidoc.element.react-fontawesome.propTypes.ariaLabel.isRequired">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.ariaLabel.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-fontawesome.propTypes.border" id="apidoc.module.react-fontawesome.propTypes.border">module react-fontawesome.propTypes.border</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.border.border" id="apidoc.element.react-fontawesome.propTypes.border.border">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>border
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">border = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.border.isRequired" id="apidoc.element.react-fontawesome.propTypes.border.isRequired">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.border.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-fontawesome.propTypes.cssModule" id="apidoc.module.react-fontawesome.propTypes.cssModule">module react-fontawesome.propTypes.cssModule</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.cssModule.cssModule" id="apidoc.element.react-fontawesome.propTypes.cssModule.cssModule">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>cssModule
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cssModule = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.cssModule.isRequired" id="apidoc.element.react-fontawesome.propTypes.cssModule.isRequired">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.cssModule.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-fontawesome.propTypes.flip" id="apidoc.module.react-fontawesome.propTypes.flip">module react-fontawesome.propTypes.flip</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.flip.flip" id="apidoc.element.react-fontawesome.propTypes.flip.flip">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>flip
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">flip = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.flip.isRequired" id="apidoc.element.react-fontawesome.propTypes.flip.isRequired">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.flip.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-fontawesome.propTypes.rotate" id="apidoc.module.react-fontawesome.propTypes.rotate">module react-fontawesome.propTypes.rotate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.rotate.rotate" id="apidoc.element.react-fontawesome.propTypes.rotate.rotate">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>rotate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rotate = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.rotate.isRequired" id="apidoc.element.react-fontawesome.propTypes.rotate.isRequired">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.rotate.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-fontawesome.propTypes.size" id="apidoc.module.react-fontawesome.propTypes.size">module react-fontawesome.propTypes.size</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.size.size" id="apidoc.element.react-fontawesome.propTypes.size.size">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>size
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">size = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.size.isRequired" id="apidoc.element.react-fontawesome.propTypes.size.isRequired">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.size.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-fontawesome.propTypes.stack" id="apidoc.module.react-fontawesome.propTypes.stack">module react-fontawesome.propTypes.stack</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.stack.stack" id="apidoc.element.react-fontawesome.propTypes.stack.stack">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.</span>stack
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stack = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.propTypes.stack.isRequired" id="apidoc.element.react-fontawesome.propTypes.stack.isRequired">
+        function <span class="apidocSignatureSpan">react-fontawesome.propTypes.stack.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
