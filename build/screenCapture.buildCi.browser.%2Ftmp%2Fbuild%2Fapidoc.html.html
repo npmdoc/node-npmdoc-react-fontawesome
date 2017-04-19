@@ -56,6 +56,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.react-fontawesome">
+            function <span class="apidocSignatureSpan"></span>react-fontawesome
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.propTypes.ariaLabel">
             function <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes.ariaLabel
             <span class="apidocSignatureSpan">()</span>
@@ -419,6 +428,57 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.react-fontawesome" id="apidoc.module.react-fontawesome">module react-fontawesome</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-fontawesome.react-fontawesome" id="apidoc.element.react-fontawesome.react-fontawesome">
+        function <span class="apidocSignatureSpan"></span>react-fontawesome
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">react-fontawesome = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (initialState === undefined &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : _prodInvariant('82',
+Constructor.displayName || 'ReactCompositeComponent') : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
