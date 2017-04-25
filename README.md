@@ -1,6 +1,6 @@
 # npmdoc-react-fontawesome
 
-#### api documentation for  [react-fontawesome (v1.5.0)](https://github.com/danawoodman/react-fontawesome#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-fontawesome.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-fontawesome) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-fontawesome.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-fontawesome)
+#### basic api documentation for  [react-fontawesome (v1.6.1)](https://github.com/danawoodman/react-fontawesome#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-fontawesome.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-fontawesome) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-fontawesome.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-fontawesome)
 
 #### A React component for the font-awesome icon library.
 
@@ -28,43 +28,45 @@
     "bugs": {
         "url": "https://github.com/danawoodman/react-fontawesome/issues"
     },
-    "config": {
-        "entry": "src",
-        "output": "lib",
-        "mainFile": "src/index.js"
+    "bujs": {
+        "url": "https://github.com/danawoodman/react-fontawesome/issues"
     },
-    "dependencies": {},
+    "dependencies": {
+        "prop-types": "^15.5.6"
+    },
     "description": "A React component for the font-awesome icon library.",
     "devDependencies": {
         "babel-cli": "^6.6.5",
         "babel-core": "^6.7.4",
-        "babel-plugin-add-module-exports": "^0.1.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
         "babel-preset-es2015": "^6.6.0",
         "babel-preset-react": "^6.5.0",
         "babel-preset-stage-2": "^6.5.0",
         "chai": "^3.2.0",
-        "eslint": "^2.5.3",
+        "eslint": "^3.19.0",
         "eslint-plugin-nodeca": "^1.0.3",
-        "eslint-plugin-react": "^4.2.3",
-        "jsdoc-to-markdown": "^1.1.1",
-        "jsdom": "^6.2.0",
-        "mocha": "^2.2.5",
+        "eslint-plugin-react": "^6.10.3",
+        "jsdoc-to-markdown": "^3.0.0",
+        "jsdom": "^9.12.0",
+        "mocha": "^3.2.0",
         "mocha-jsdom": "^1.0.0",
-        "mocha-sinon": "^1.1.4",
+        "mocha-sinon": "^2.0.0",
+        "prettier-eslint": "^5.1.0",
+        "prettier-eslint-cli": "^3.4.1",
         "react": "^15.0.1",
         "react-dom": "^15.0.1",
-        "sinon": "^1.16.1",
+        "sinon": "^2.1.0",
         "sinon-chai": "^2.8.0"
     },
     "directories": {},
     "dist": {
-        "shasum": "879d1b2aa5c48bba551e9237f84993217b5645c4",
-        "tarball": "https://registry.npmjs.org/react-fontawesome/-/react-fontawesome-1.5.0.tgz"
+        "shasum": "eddce17e7dc731aa09fd4a186688a61793a16c5c",
+        "tarball": "https://registry.npmjs.org/react-fontawesome/-/react-fontawesome-1.6.1.tgz"
     },
     "engines": {
         "node": ">=0.10.0"
     },
-    "gitHead": "e4449ec44c12fb4966406744d764d78bcc2f69e4",
+    "gitHead": "40eca64bef0ae591a21dc1538659c07ff415525e",
     "homepage": "https://github.com/danawoodman/react-fontawesome#readme",
     "keywords": [
         "react",
@@ -98,16 +100,17 @@
         "url": "git+https://github.com/danawoodman/react-fontawesome.git"
     },
     "scripts": {
-        "build": "babel $npm_package_config_entry --out-dir $npm_package_config_output",
-        "dist": "npm run lint && npm run build && npm test && npm run docs",
-        "docs": "jsdoc2md $npm_package_config_mainFile > api.md",
-        "lint": "eslint .",
+        "build": "babel src --out-dir lib",
+        "dist": "npm run format && npm run build && npm test && npm run docs",
+        "docs": "jsdoc2md lib/index.js > api.md",
+        "format": "prettier-eslint '{src,test}/**/*.js' --prettier.single-quote --prettier.no-semi es5 --write",
         "test": "mocha",
         "watch": "npm run watch-build & npm run watch-test",
         "watch-build": "npm run build -- --watch",
         "watch-test": "npm run test -- -w"
     },
-    "version": "1.5.0"
+    "version": "1.6.1",
+    "bin": {}
 }
 ```
 
