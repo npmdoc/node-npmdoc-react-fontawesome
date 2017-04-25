@@ -47,7 +47,7 @@
 }
 </style>
 <h1>api documentation for
-    <a href="https://github.com/danawoodman/react-fontawesome#readme">react-fontawesome (v1.5.0)</a>
+    <a href="https://github.com/danawoodman/react-fontawesome#readme">react-fontawesome (v1.6.1)</a>
 </h1>
 <h4>A React component for the font-awesome icon library.</h4>
 <div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
@@ -58,7 +58,7 @@
 
             <a class="apidocElementLiA" href="#apidoc.element.react-fontawesome.react-fontawesome">
             function <span class="apidocSignatureSpan"></span>react-fontawesome
-            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -129,12 +129,6 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-fontawesome.</span>propTypes</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-fontawesome.</span>displayName</span>
 
         </li>
 
@@ -433,48 +427,17 @@
     <h2>
         <a href="#apidoc.element.react-fontawesome.react-fontawesome" id="apidoc.element.react-fontawesome.react-fontawesome">
         function <span class="apidocSignatureSpan"></span>react-fontawesome
-        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">react-fontawesome = function (props, context, updater) {
-  // This constructor gets overridden by mocks. The argument is used
-  // by mocks to assert on what gets mounted.
+    <li>description and source-code<pre class="apidocCodePre">function FontAwesome() {
+  _classCallCheck(this, FontAwesome);
 
-  if (process.env.NODE_ENV !== 'production') {
-    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
-. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : void 0;
-  }
+  var _this = _possibleConstructorReturn(this, (FontAwesome.__proto__ || Object.getPrototypeOf(FontAwesome)).call(this));
 
-  // Wire up auto-binding
-  if (this.__reactAutoBindPairs.length) {
-    bindAutoBindMethods(this);
-  }
-
-  this.props = props;
-  this.context = context;
-  this.refs = emptyObject;
-  this.updater = updater || ReactNoopUpdateQueue;
-
-  this.state = null;
-
-  // ReactClasses doesn't have constructors. Instead, they use the
-  // getInitialState and componentWillMount methods for initialization.
-
-  var initialState = this.getInitialState ? this.getInitialState() : null;
-  if (process.env.NODE_ENV !== 'production') {
-    // We allow auto-mocks to proceed as if they're returning null.
-    if (initialState === undefined &amp;&amp; this.getInitialState._isMockFunction) {
-      // This is probably bad practice. Consider warning here and
-      // deprecating this convenience.
-      initialState = null;
-    }
-  }
-  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
-s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : _prodInvariant('82',
-Constructor.displayName || 'ReactCompositeComponent') : void 0;
-
-  this.state = initialState;
+  _this.displayName = 'FontAwesome';
+  return _this;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -569,8 +532,6 @@ Constructor.displayName || 'ReactCompositeComponent') : void 0;
     <li>description and source-code<pre class="apidocCodePre">propTypes.stack = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-
-
 
 
 
